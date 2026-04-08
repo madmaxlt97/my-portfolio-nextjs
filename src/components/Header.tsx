@@ -1,0 +1,45 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function Header() {
+  const pathName = usePathname();
+
+  const links = [
+    { href: "/about", label: "ABOUT" },
+    { href: "/portfolio", label: "PORTFOLIO" },
+    { href: "/contacts", label: "CONTACTS" },
+  ];
+
+  return (
+    <>
+      <nav className="flex justify-between items-center p-2 pl-4 pr-4 bg-gradient-to-br from-[#4e4e4e] to-[#676161]">
+        <Link
+          className="font-semibold text-[16px] sm:text-[20px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px] min-[400px]:max-w-none"
+          href="/"
+        >
+          MAX NIKOLAJEV
+        </Link>
+
+        <div className="flex items-center gap-2 min-[340px]:gap-4 sm:gap-6">
+          {links.map((link) => {
+            const isActive = pathName === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`text-[10px] min-[340px]:text-[12px] sm:text-[16px] transition-all duration-300 ${
+                  isActive
+                    ? "text-white scale-110 font-bold"
+                    : "text-gray-400 hover:text-gray-200"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+    </>
+  );
+}
