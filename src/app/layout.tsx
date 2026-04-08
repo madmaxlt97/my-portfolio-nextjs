@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Max Nikolajev Portfolio",
   description:
-    "Portfolio of web developer Max Nikolajev. Created with Next.js as practice before bigger Next.js projects to learn it and Tailwind",
+    "Max Nikolajev — Web Developer Portfolio. Frontend development, React, and modern web solutions.",
 };
 
 export default function RootLayout({
