@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className="flex justify-between items-center p-2 pl-4 pr-4 bg-gradient-to-br from-[#4e4e4e] to-[#676161]">
+      <nav className="sticky top-0 z-50 backdrop-blur-md flex justify-between items-center p-2 pl-4 pr-4 bg-gradient-to-br from-[#4e4e4e]/70 to-[#676161]/70 ">
         <Link
           className="font-semibold text-[16px] sm:text-[20px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px] min-[400px]:max-w-none"
           href="/"
