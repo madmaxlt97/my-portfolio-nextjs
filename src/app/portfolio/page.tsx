@@ -31,47 +31,62 @@ export default function Portfolio() {
       git: "https://github.com/madmaxlt97/explorebalticstates",
       link: "https://explorebalticstates.com/",
     },
+    {
+      id: 3,
+      image: "/CarsMarket.avif",
+      alt: "CarsMarket",
+      title: "CarsMarket | TypeScript, Next.js, Tailwind, Prisma, Supabase",
+      description:
+        "Custom car marketplace with filtering, image uploads, and CRUD functionality. Currently in development.",
+      git: "https://github.com/madmaxlt97/carsmarket",
+      link: "",
+    },
   ];
   return (
-    <div className="portfolio-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-2">
+    <div className="portfolio-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-2 max-w-6xl mx-auto">
       {cards.map((card) => (
         <div
           key={card.id}
-          className="flex flex-col h-full border p-5 rounded-xl hover:shadow-xl hover:scale-105 transition"
+          className="flex flex-col h-full border p-4 rounded-xl hover:shadow-xl hover:scale-105 transition max-w-sm mx-auto"
         >
           <Image
             src={card.image}
             width={500}
             height={600}
             alt={card.alt}
-            className="rounded-lg"
+            className="rounded-lg w-full h-48 object-cover"
           />
-          <div className="info-block flex flex-col items-center">
+
+          <div className="info-block flex flex-col items-center text-center mt-4">
             <Link
               href={card.link}
               target="_blank"
               rel="noopener noreferrer"
               className="card-link"
             >
-              <p className="my-1 font-semibold">{card.title}</p>
+              <p className="font-semibold text-lg">{card.title}</p>
             </Link>
-            <p className="card-description">{card.description}</p>
+
+            <p className="card-description text-sm text-gray-300 mt-2">
+              {card.description}
+            </p>
           </div>
-          <div className="link-btns flex gap-4 mt-auto pt-6 justify-center">
+
+          <div className="link-btns flex gap-3 mt-auto pt-6 justify-center">
             <Link
               href={card.git}
               target="_blank"
               rel="noopener noreferrer"
-              //className="github gap-20 hover:scale-[1.05] "
-              className="inline-flex items-center justify-center px-6 py-2 bg-gray-900 text-white rounded-full transition-transform duration-200 hover:scale-105 hover:bg-gray-800"
+              className="inline-flex items-center justify-center px-4 py-2 bg-gray-900 text-white rounded-full text-sm hover:scale-105 transition"
             >
               GitHub
             </Link>
+
             <Link
               href={card.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-2 bg-blue-600 text-white rounded-full transition-transform duration-200 hover:scale-105 hover:bg-blue-700"
+              className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-full text-sm hover:scale-105 transition"
             >
               Live Demo
             </Link>
