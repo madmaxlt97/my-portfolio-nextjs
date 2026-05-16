@@ -23,7 +23,7 @@ export default function Home() {
 
         <Link
           href="/portfolio"
-          className="flex justify-center bg-gradient-to-br from-[#4e4e4e]/70 to-[#676161]/70 max-w-[30%] mx-auto text-xl hover:shadow-lg hover:scale-105 transition"
+          className="flex justify-center rounded bg-gradient-to-br from-[#4e4e4e]/70 to-[#676161]/70 max-w-[30%] mx-auto text-xl hover:shadow-lg hover:scale-105 transition"
         >
           My Projects →
         </Link>
