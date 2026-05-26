@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a portfolio website of developer Max Nikolajev on Next.js with Tailwind. Main purpose was to migrate website from old version (React) to modern technologies (Next.js, Tailwind) to improve perfomance and SEO scores.
+
+As a result of the refactoring and optimisation work:
+• Improved Lighthouse Performance score from 86 to 100 (+14 points)
+• Improved Accessibility score to 100 (+8 points)
+• Reduced Largest Contentful Paint (LCP) from 2.4s to 0.5s on desktop
+and from 13.3s to 1.5s on mobile devices.
+
+Live demo: https://max-nikolajev-portfolio.vercel.app/
 
 ## Getting Started
 
@@ -7,11 +15,8 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
