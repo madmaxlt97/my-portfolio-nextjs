@@ -1,12 +1,24 @@
-This is a portfolio website of developer Max Nikolajev on Next.js with Tailwind. Main purpose was to migrate website from old version (React) to modern technologies (Next.js, Tailwind) to improve perfomance and SEO scores.
+# 🌐 Personal Developer Portfolio
 
-As a result of the refactoring and optimisation work:
-• Improved Lighthouse Performance score from 86 to 100 (+14 points)
-• Improved Accessibility score to 100 (+8 points)
-• Reduced Largest Contentful Paint (LCP) from 2.4s to 0.5s on desktop
-and from 13.3s to 1.5s on mobile devices.
+Modern, fast, and SEO-optimized personal portfolio website built with **Next.js** and **Tailwind CSS**. 
 
-Live demo: https://max-nikolajev-portfolio.vercel.app/
+## 🚀 The Goal & Migration
+The main objective of this project was to migrate my legacy website from Vite/React to **Next.js (App Router)** to significantly improve performance, user experience, and SEO scores.
+
+## 📊 Performance & Optimization Results
+As a result of deep refactoring and optimization, the website achieved outstanding core web vitals:
+* **⚡ Lighthouse Performance:** Boosted from `86` to **`100`** (+14 points)
+* **♿ Accessibility:** Improved to **`100`** (+8 points)
+* **📱 Desktop LCP (Largest Contentful Paint):** Reduced from `2.4s` to **`0.5s`**
+* **💻 Mobile LCP:** Dramatically cut down from `13.3s` to **`1.5s`**
+
+## 🛠 Tech Stack
+* **Framework:** Next.js (App Router)
+* **Styling:** Tailwind CSS
+* **Deployment:** Vercel
+
+## 🔗 Live Demo
+👉 **[View Live Portfolio](https://max-nikolajev-portfolio.vercel.app/)**
 
 ## Getting Started
 
