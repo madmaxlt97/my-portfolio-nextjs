@@ -35,7 +35,7 @@ export default function Contacts() {
               </Link>
             </div>
             <div
-              className="social-icon social-icon flex justify-center hover:scale-120 transition-transform 
+              className="social-icon flex justify-center hover:scale-120 transition-transform 
   duration-300 p-4"
             >
               <Link
@@ -52,7 +52,7 @@ export default function Contacts() {
               </Link>
             </div>
             <div
-              className="social-icon social-icon flex justify-center hover:scale-120 transition-transform 
+              className="social-icon flex justify-center hover:scale-120 transition-transform 
   duration-300 p-4"
             >
               <Link
@@ -69,7 +69,7 @@ export default function Contacts() {
               </Link>
             </div>
             <div
-              className="social-icon social-icon flex justify-center hover:scale-120 transition-transform 
+              className="social-icon flex justify-center hover:scale-120 transition-transform 
   duration-300 p-4"
             >
               <Link
