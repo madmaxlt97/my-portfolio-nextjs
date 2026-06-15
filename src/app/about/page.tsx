@@ -9,30 +9,35 @@ export default function About() {
     <div className="max-w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <div>
         <h2 className="text-[30px] mb-7">
-          Hi, I'm Max, a Frontend Developer with a unique journey.
+          <b>
+            <i>From Banking Logic to Web Engineering.</i>
+          </b>
         </h2>
 
         <div className="text-[20px]">
           <p className="pb-5">
-            My passion for coding first sparked back in high school, but it took
-            a decade of diverse life experience to realize that building digital
-            products is where I truly belong. Returning to programming was a
-            conscious, driven choice, and I’ve spent the last two years
-            translating that determination into a solid technical foundation.
+            I am a Front-End Developer with a strong foundation in building
+            modern, high-performance web applications using React, Next.js, and
+            TypeScript. My transition into software engineering stems from a
+            deep interest in creating scalable systems and clean, responsive
+            user interfaces.
           </p>
 
           <p className="pb-5">
-            I am a JavaScript/TypeScript enthusiast with a core focus on React.
-            My portfolio includes several high-quality pet projects and a
-            successfully delivered commercial application for a private client.
-            This experience taught me how to handle real-world requirements and
-            bridge the gap between code and business needs.
+            Having a background in banking education equips me with an
+            analytical mindset, attention to detail, and a structured approach
+            to problem-solving. I look at development not just as writing code,
+            but as a way to solve real business challenges, manage state
+            logically, and deliver robust digital products.
           </p>
 
           <p className="pb-5">
-            I thrive on solving logic puzzles and constantly improving my
-            workflow. Currently, I am deep-diving into Next.js to build more
-            performant, SEO-friendly, and scalable web applications.
+            I am passionate about performance optimization, clean architecture,
+            and intuitive UX. My hands-on projects reflect this commitment —
+            whether it is building full-stack web applications with Next.js,
+            Prisma, and Supabase, or optimizing portfolio performance scores up
+            to perfect metrics in Lighthouse. I thrive on continuous learning
+            and am eager to contribute to impactful web development initiatives.
           </p>
         </div>
 
