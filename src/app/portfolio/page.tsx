@@ -32,7 +32,7 @@ export default function Portfolio() {
       link: "https://explorebalticstates.com/",
     },
     {
-      id: 3,
+      id: 4,
       image: "/CarsMarket.avif",
       alt: "CarsMarket",
       title: "CarsMarket | TypeScript, Next.js, Tailwind, Prisma, Supabase",
@@ -47,7 +47,7 @@ export default function Portfolio() {
       {cards.map((card) => (
         <div
           key={card.id}
-          className="flex flex-col h-full border p-4 rounded-xl hover:shadow-xl hover:scale-105 transition max-w-sm mx-auto"
+          className="flex flex-col h-full w-full border p-4 rounded-xl shadow-lg hover:shadow-xl  hover:-translate-y-1 transition-all duration-300 ease-in-out"
         >
           <Image
             src={card.image}
