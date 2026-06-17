@@ -69,9 +69,10 @@ export default function About() {
           onClick={() => setIsOpen(true)}
         >
           <Image
-            src="/Maksim-Nikolajev-CV.avif"
+            src="/Maksim_Nikolajev_CV.avif"
             width={450}
             height={700}
+            loading="eager"
             alt="Maksim Nikolajev CV"
             className="rounded-xl shadow-lg max-w-md w-auto"
           />
@@ -98,7 +99,7 @@ export default function About() {
               </button>
 
               <Image
-                src="/Maksim-Nikolajev-CV.avif"
+                src="/Maksim_Nikolajev_CV.avif"
                 width={1400}
                 height={1400}
                 alt="Maksim Nikolajev CV enlarged"

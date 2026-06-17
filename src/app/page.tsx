@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className="text-[45px] font-semibold flex justify-center">
           Hi, I'm Max Nikolajev
         </h1>
-        <p className=" font-normal text-[30px] flex justify-center my-8">
+        <p className="font-normal text-[30px] flex justify-center my-8 max-w-[70%] mx-auto">
           I'm a Front-End / Full-Stack Developer. I build modern,
           high-performance web applications using Next.js, React, and
           TypeScript.
@@ -16,6 +16,7 @@ export default function Home() {
         <div className="img-container flex justify-center my-6">
           <Image
             src="/IntroPageScreen.avif"
+            loading="eager"
             width={700}
             height={700}
             alt="screen"
