@@ -1,80 +1,42 @@
 import Link from "next/link";
 import Image from "next/image";
+//import { Project } from "@/types/projects";
+import { projects } from "@/data/projects";
+
 export default function Portfolio() {
-  const cards = [
-    {
-      id: 1,
-      image: "/finmavi1.avif",
-      alt: "finmavi",
-      title: "Finmavi | Typescript, React, Node.js, MongoDB, Express",
-      description:
-        "Financial investment site where clients can see info, leave their contacts and admin can reach them to provide more info or organize a call.",
-      git: "https://github.com/madmaxlt97/quantumcopy",
-      link: "https://finmavi.com",
-    },
-    {
-      id: 2,
-      image: "/landing.avif",
-      alt: "Max Nikolajev landing page",
-      title: "My first landing page | HTML, CSS",
-      description: "My landing page with info about me and contacts.",
-      git: "https://github.com/madmaxlt97/mylandingpage",
-      link: "https://mylandingpage-tau.vercel.app/",
-    },
-    {
-      id: 3,
-      image: "/EBS.avif",
-      alt: "Explore Baltic States",
-      title: "Explore Baltic States | TypeScript, React, CSS",
-      description:
-        "Website about Baltic countries with custom design and animations.",
-      git: "https://github.com/madmaxlt97/explorebalticstates",
-      link: "https://explorebalticstates.com/",
-    },
-    {
-      id: 4,
-      image: "/CarsMarket.avif",
-      alt: "CarsMarket",
-      title: "CarsMarket | TypeScript, Next.js, Tailwind, Prisma, Supabase",
-      description:
-        "Custom car marketplace with filtering, image uploads, and CRUD functionality. Currently in development.",
-      git: "https://github.com/madmaxlt97/carsmarket",
-      link: "",
-    },
-  ];
   return (
     <div className="portfolio-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-2 max-w-6xl mx-auto">
-      {cards.map((card) => (
+      {projects.map((project) => (
         <div
-          key={card.id}
+          key={project.id}
           className="flex flex-col h-full w-full border p-4 rounded-xl shadow-lg hover:shadow-xl  hover:-translate-y-1 transition-all duration-300 ease-in-out"
         >
           <Image
-            src={card.image}
+            src={project.image}
             width={500}
             height={600}
-            alt={card.alt}
+            alt={project.alt}
             className="rounded-lg w-full h-48 object-cover"
           />
 
           <div className="info-block flex flex-col items-center text-center mt-4">
             <Link
-              href={card.link}
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="card-link"
             >
-              <p className="font-semibold text-lg">{card.title}</p>
+              <p className="font-semibold text-lg">{project.title}</p>
             </Link>
 
             <p className="card-description text-sm text-gray-300 mt-2">
-              {card.description}
+              {project.description}
             </p>
           </div>
 
           <div className="link-btns flex gap-3 mt-auto pt-6 justify-center">
             <Link
-              href={card.git}
+              href={project.git}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-4 py-2 bg-gray-900 text-white rounded-full text-sm hover:scale-105 transition"
@@ -83,7 +45,7 @@ export default function Portfolio() {
             </Link>
 
             <Link
-              href={card.link}
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-full text-sm hover:scale-105 transition"
