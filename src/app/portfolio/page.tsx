@@ -1,15 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-//import { Project } from "@/types/projects";
 import { projects } from "@/data/projects";
 
 export default function Portfolio() {
   return (
-    <div className="portfolio-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-2 max-w-6xl mx-auto">
+    <div className="portfolio-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-2 max-w-6xl ">
       {projects.map((project) => (
         <div
           key={project.id}
-          className="flex flex-col h-full w-full border p-4 rounded-xl shadow-lg hover:shadow-xl  hover:-translate-y-1 transition-all duration-300 ease-in-out"
+          className="flex flex-col max-h-[450px] w-full border p-4 rounded-xl shadow-lg hover:shadow-xl  hover:-translate-y-1 transition-all duration-300 ease-in-out"
         >
           <Image
             src={project.image}

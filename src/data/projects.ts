@@ -46,7 +46,7 @@ export const projects: Project[] = [
     alt: "Event Masters",
     title: "Event Masters | React, Next.js, Tailwind CSS, TypeScript",
     description:
-      "Website for event organizers with custom design, animations inquires form via Resend",
+      "Website for event organizers with custom design, animations, inquiries form via Resend",
     git: "https://github.com/madmaxlt97/event-masters",
     link: "https://event-masters-six.vercel.app/",
   },
