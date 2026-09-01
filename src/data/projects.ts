@@ -50,4 +50,14 @@ export const projects: Project[] = [
     git: "https://github.com/madmaxlt97/event-masters",
     link: "https://event-masters-six.vercel.app/",
   },
+  {
+    id: 6,
+    image: "/mano-servisas-hero.avif",
+    alt: "Mano Servisas",
+    title: "Mano Servisas | React, Next.js, Tailwind CSS, TypeScript",
+    description:
+      "Website for an automotive service with custom design, animations, inquiries form and etc.",
+    git: "https://github.com/madmaxlt97/vag_workshop",
+    link: "https://mano-servisas.vercel.app/",
+  },
 ];
